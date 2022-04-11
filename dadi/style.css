@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("matrix-screen.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.container,
+.row,
+.dice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 70vw;
+    margin: 100px auto;
+}
+
+.dice{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin: 0 25px;
+    font-size: 75px;
+    color: white;
+}
