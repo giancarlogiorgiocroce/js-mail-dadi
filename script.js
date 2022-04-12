@@ -25,15 +25,17 @@ button.addEventListener('click', function(){
 
     for(let i=0; i < mailList.length; i++){
 
-    // console.log(i);
+        // console.log(i);
 
-    if(mailInserita === mailList[i]){
-        autorizzazione = true;
-        // console.log(autorizzazione, ", sei autorizzato");
+        if(mailInserita === mailList[i]){
+            autorizzazione = true;
+            // console.log(autorizzazione, ", sei autorizzato");
+        }
+    };
+    
+    if(autorizzazione) {
         output.append(`Bentornato ${mailInserita}, prosegui pure`);
-    }
-};
+    } else {
+        output.append(`${mailInserita}, non sei autorizzato`);
+    };
 })
-
-
-
